@@ -9,8 +9,8 @@ const CardNumber: React.FC<CardNumberProps> = (props: CardNumberProps) => {
 
   return (
     <>
-      {cardNumber.toString().length < 16 ? (
-        <p className="icb-card-bank__error">The number is less than 16 digit</p>
+      {cardNumber.toString().length !== 16 ? (
+        <p className="icb-card-bank__error">The number must be 16 digit</p>
       ) : (
         cardNumber
           .toString()

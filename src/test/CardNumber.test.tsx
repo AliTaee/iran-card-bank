@@ -30,9 +30,17 @@ describe('Card number tests', () => {
     })
   })
 
-  it('Should Render error with provide less than 16 digits', () => {
-    render(<CardNumber cardNumber={0} />)
-    const errorText = screen.getByText(/The number is less than 16 digit/i)
-    expect(errorText).toBeInTheDocument()
+  describe('Render error with provide less or more than 16 digits', () => {
+    it('Should show error with less than 16 digits', () => {
+      render(<CardNumber cardNumber={0} />)
+      const errorText = screen.getByText(/The number must be 16 digit/i)
+      expect(errorText).toBeInTheDocument()
+    })
+
+    it('Should show error with more than 16 digits ', () => {
+      render(<CardNumber cardNumber={3548_8413_6984_1254_2541} />)
+      const errorText = screen.getByText(/The number must be 16 digit/i)
+      expect(errorText).toBeInTheDocument()
+    })
   })
 })
