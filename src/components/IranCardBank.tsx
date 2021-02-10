@@ -3,16 +3,19 @@ import CardNumber from './CardNumber'
 
 interface IranCardBankProps {
   cardNumber: number
-  size?: 'default' | 'full'
+  fullSize?: boolean
   background?: string
-  borderRadio?: string
+  borderRadius?: string
 }
 
 const IranCardBank: React.FC<IranCardBankProps> = (props: IranCardBankProps) => {
-  const { cardNumber } = props
+  const { fullSize, cardNumber, background, borderRadius } = props
 
   return (
-    <div className="icb-card-bank">
+    <div
+      className={`icb-card-bank ${fullSize && 'icb-card-bank--full-size'}`}
+      style={{ background, borderRadius }}
+    >
       <span className="icb-card-bank__number">
         <CardNumber cardNumber={cardNumber} />
       </span>
