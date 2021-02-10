@@ -1,11 +1,45 @@
-# Getting Started with Create React App
+# Iran card number 💳
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+Customizable Iran card bank.
 
-## Available Scripts
+## List of props
 
-In the project directory, you can run:
+- cardNumber(type number): To show user card number.
+- fullSize(type boolean): If it's true then it get full width and height as parent
+- background(type string): Customize background color, Also you can pass gradient 💅
+- backgroundImage (type 'initial' | string): Customize background image 🖼️
+- borderRadius (type string): Customize border radius
 
+## Todo list:
+
+- Auto bank detection and show bank name
+- Only Show first or last digits
+- Show user card bank name and family
+- Flag to enable or disable showing name and family
+- Position for card number
+- Position for name and family
+- Error on Card numbers
+- Improve document 📝
+- Show custom background base on bank detection
+- Add unit test for each feature
+- Add story book
+- Release this project as NPM package 📦
+
+## Technologies
+
+Project is created with:
+
+- React
+- TypeScript
+- Jest
+- Prettier
+- Eslint
+- Node-sass
+- Testing-library/react
+
+## Build Setup
+
+```bash
 ### `yarn start`
 
 Runs the app in the development mode.\
@@ -38,9 +72,4 @@ If you aren’t satisfied with the build tool and configuration choices, you can
 Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you’re on your own.
 
 You don’t have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn’t feel obligated to use this feature. However we understand that this tool wouldn’t be useful if you couldn’t customize it when you are ready for it.
-
-## Learn More
-
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
-
-To learn React, check out the [React documentation](https://reactjs.org/).
+```
