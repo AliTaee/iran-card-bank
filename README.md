@@ -25,6 +25,17 @@ Customizable Iran card bank.
 - Add story book
 - Release this project as NPM package 📦
 
+## How to contribute on this project? 🤔
+
+- By suggestion cool features
+- Develop one of todo list features or you own idea
+- Improve code base, Clean code, Add more unit tests 
+
+Please, Tell us about what you are working so We can update readme
+and others know what you are working on and they move to other features
+or you can help others on their develop. Create a branch with feature/ prefix
+on start coding. 
+
 ## Technologies
 
 Project is created with:
