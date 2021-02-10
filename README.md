@@ -33,8 +33,8 @@ Customizable Iran card bank.
 
 Please, Tell us about what you are working so We can update readme
 and others know what you are working on and they move to other features
-or you can help others on their develop. Create a branch with feature/ prefix
-on start coding. 
+or you can help others on their development. Create a branch with feature/ prefix
+and start coding. 
 
 ## Technologies
 
