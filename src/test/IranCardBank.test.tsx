@@ -21,5 +21,12 @@ describe('Iran card number test', () => {
       const rootElement = screen.getByTestId(TEST_ID_ELEMENT)
       expect(rootElement).toHaveStyle('border-radius: 15px')
     })
+
+    it('Should have full size className', () => {
+      render(<IranCardBank cardNumber={MOCK_CARD_NUMBER} fullSize />)
+
+      const rootElement = screen.getByTestId(TEST_ID_ELEMENT)
+      expect(rootElement).toHaveClass('icb-card-bank--full-size')
+    })
   })
 })
