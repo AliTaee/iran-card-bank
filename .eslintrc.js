@@ -4,7 +4,7 @@ module.exports = {
     node: true,
     jest: true,
   },
-  parser: 'babel-eslint',
+  parser: '@typescript-eslint/parser',
   rules: {
     strict: 0,
     'linebreak-style': 0,
@@ -18,7 +18,7 @@ module.exports = {
       version: '17.0.1',
     },
   },
-  plugins: ['prettier', 'testing-library', 'jest-dom'],
+  plugins: ['prettier', 'testing-library', 'jest-dom', '@typescript-eslint'],
   extends: [
     'eslint:recommended',
     'plugin:react/recommended',
@@ -28,5 +28,6 @@ module.exports = {
     'plugin:testing-library/react',
     'plugin:testing-library/recommended',
     'plugin:jest-dom/recommended',
+    'plugin:@typescript-eslint/recommended',
   ],
 }
