@@ -28,5 +28,17 @@ describe('Iran card number test', () => {
       const rootElement = screen.getByTestId(TEST_ID_ELEMENT)
       expect(rootElement).toHaveClass('icb-card-bank--full-size')
     })
+
+    it('Should have custom background image', () => {
+      render(
+        <IranCardBank
+          cardNumber={MOCK_CARD_NUMBER}
+          backgroundImage="fakeImage.jps"
+        />,
+      )
+
+      const rootElement = screen.getByTestId(TEST_ID_ELEMENT)
+      expect(rootElement).toHaveStyle('background-image: url(fakeImage.jps)')
+    })
   })
 })
