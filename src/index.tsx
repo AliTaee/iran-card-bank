@@ -1,12 +1,12 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './styles/index.scss'
-import App from './components/App'
+import IranCardBank from './components/IranCardBank'
 import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <IranCardBank cardNumber={9451_5415_2541_8445} />
   </React.StrictMode>,
   document.getElementById('root'),
 )

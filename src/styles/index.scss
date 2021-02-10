@@ -1,9 +1,35 @@
-body {
+@import './var';
+@import './mixin';
+
+html {
   margin: 0;
   padding: 0;
+  height: 100%;
+}
+
+body {
+  height: 100%;
   font-family: sans-serif, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue', sans-serif;
   background: #0a0a0a;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  @include flexBoxCenter;
+}
+
+.icb-card-bank {
+  color: $default-color;
+  background-color: $default-background-color;
+  background: $default-background;
+  border-radius: $default-border-radius;
+  width: $default-width;
+  height: $default-height;
+  @include flexBoxCenter;
+
+  &__number {
+    width: 85%;
+    display: flex;
+    justify-content: space-around;
+    font-size: $default-font-size;
+  }
 }
