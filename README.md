@@ -4,7 +4,7 @@ Customizable Iran card bank.
 
 ## List of props
 
-- cardNumber (type number): To show user card number.
+- cardNumber* (type number): To show user card number.
 - fullSize (type boolean): If it's true then it get full width and height as parent
 - background (type string): Customize background color, Also you can pass gradient 💅
 - backgroundImage (type 'initial' | string): Customize background image 🖼️
