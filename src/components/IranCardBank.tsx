@@ -5,16 +5,26 @@ interface IranCardBankProps {
   cardNumber: number
   fullSize?: boolean
   background?: string
+  backgroundImage?: 'initial' | string
   borderRadius?: string
 }
 
 const IranCardBank: React.FC<IranCardBankProps> = (props: IranCardBankProps) => {
-  const { fullSize, cardNumber, background, borderRadius } = props
+  const { fullSize, cardNumber, background, backgroundImage, borderRadius } = props
+  const customizeCardStyles = {
+    background,
+    borderRadius,
+    backgroundImage,
+  }
+
+  if (backgroundImage) {
+    customizeCardStyles.backgroundImage = `url(${backgroundImage})`
+  }
 
   return (
     <div
-      className={`icb-card-bank ${fullSize && 'icb-card-bank--full-size'}`}
-      style={{ background, borderRadius }}
+      className={`icb-card-bank ${fullSize ? 'icb-card-bank--full-size' : ''}`}
+      style={customizeCardStyles}
     >
       <span className="icb-card-bank__number">
         <CardNumber cardNumber={cardNumber} />

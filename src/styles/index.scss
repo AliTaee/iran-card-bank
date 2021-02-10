@@ -26,6 +26,9 @@ body {
   width: $default-width;
   height: $default-height;
   @include flexBoxCenter;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
 
   &__number {
     width: 85%;

@@ -4,6 +4,9 @@ import './styles/index.scss'
 import IranCardBank from './components/IranCardBank'
 import reportWebVitals from './reportWebVitals'
 
+// Asset image to testing backgroundImage prop
+// import ForestImage from './assets/forest-patrol.jpg'
+
 ReactDOM.render(
   <React.StrictMode>
     <IranCardBank cardNumber={9451_5415_2541_8445} />
