@@ -32,4 +32,9 @@ body {
     justify-content: space-around;
     font-size: $default-font-size;
   }
+
+  &__error {
+    color: $error-color;
+    font-size: $small-font-size;
+  }
 }
