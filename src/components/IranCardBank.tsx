@@ -24,6 +24,7 @@ const IranCardBank: React.FC<IranCardBankProps> = (props: IranCardBankProps) => 
   return (
     <div
       className={`icb-card-bank ${fullSize ? 'icb-card-bank--full-size' : ''}`}
+      data-testid="icb-card-bank"
       style={customizeCardStyles}
     >
       <span className="icb-card-bank__number">
