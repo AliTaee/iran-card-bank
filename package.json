@@ -21,6 +21,7 @@
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
+    "test:staged": "cross-env CI=true react-scripts test --findRelatedTests",
     "eject": "react-scripts eject"
   },
   "eslintConfig": {
@@ -41,6 +42,19 @@
       "last 1 safari version"
     ]
   },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "src/**/*.ts, src/**/*.tsx": [
+      "eslint --fix",
+      "prettier --write",
+      "yarn run test:staged",
+      "git add"
+    ]
+  },
   "devDependencies": {
     "@typescript-eslint/eslint-plugin": "^4.15.0",
     "@typescript-eslint/parser": "^4.15.0",
@@ -52,6 +66,8 @@
     "eslint-plugin-react": "^7.22.0",
     "eslint-plugin-testing-library": "^3.10.1",
     "eslint-utils": "^2.1.0",
+    "husky": "^5.0.9",
+    "lint-staged": "^10.5.4",
     "prettier": "^2.2.1"
   }
 }
