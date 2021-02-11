@@ -1,4 +1,4 @@
-type cardNumber = number
+export type cardNumber = number
 
 export interface IranCardBankProps {
   cardNumber: cardNumber
@@ -9,5 +9,9 @@ export interface IranCardBankProps {
 }
 
 export interface CardNumberProps {
+  cardNumber: cardNumber
+}
+
+export interface BankNameProps {
   cardNumber: cardNumber
 }

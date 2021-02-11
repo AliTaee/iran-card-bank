@@ -26,7 +26,7 @@ const IranCardBank: React.FC<IranCardBankProps> = (props: IranCardBankProps) => 
       <span className="icb-card-bank__number">
         <CardNumber cardNumber={cardNumber} />
       </span>
-      <BankName />
+      <BankName cardNumber={cardNumber} />
     </div>
   )
 }

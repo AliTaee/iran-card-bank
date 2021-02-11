@@ -9,7 +9,7 @@ import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
-    <IranCardBank cardNumber={9451_5415_2541_8445} />
+    <IranCardBank cardNumber={6274_1215_2541_8445} />
   </React.StrictMode>,
   document.getElementById('root'),
 )
