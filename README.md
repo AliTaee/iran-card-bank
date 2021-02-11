@@ -2,7 +2,7 @@
 
 Customizable Iran card bank.
 
-## features
+## Features
 
 - Auto bank detection base on 6 first digits and show bank name
 - Customize: background color or gradient, background image, border radius
@@ -22,6 +22,7 @@ Customizable Iran card bank.
 - Flag to enable or disable bank name
 - Position to show bank name
 - Make related props one prop object for better developer experience
+- Users can add new custom bank for auto bank detection
 - Users can type their card number
 - Project demo
 - Customize texts
