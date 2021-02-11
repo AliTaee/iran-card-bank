@@ -1,7 +1,7 @@
 import React from 'react'
 import '@testing-library/jest-dom/extend-expect'
 import { render, screen } from '@testing-library/react'
-import IranCardBank from '../IranCardBank'
+import IranCardBank from '../../IranCardBank'
 
 const TEST_ID_ELEMENT = 'icb-card-bank'
 const MOCK_CARD_NUMBER = 5555_1111_2222_3333

@@ -1,7 +1,7 @@
 import React from 'react'
 import '@testing-library/jest-dom/extend-expect'
 import { render, screen } from '@testing-library/react'
-import CardNumber from '../components/CardNumber'
+import CardNumber from '../../components/CardNumber'
 
 describe('Card number tests', () => {
   describe('Renders card number correctly', () => {
