@@ -1,8 +1,5 @@
 import React from 'react'
-
-interface CardNumberProps {
-  cardNumber: number
-}
+import { CardNumberProps } from '../model/model'
 
 const CardNumber: React.FC<CardNumberProps> = (props: CardNumberProps) => {
   const { cardNumber } = props
