@@ -1,13 +1,9 @@
 import React from 'react'
-import CardNumber from './CardNumber'
+import { IranCardBankProps } from './model/model'
 
-interface IranCardBankProps {
-  cardNumber: number
-  fullSize?: boolean
-  background?: string
-  backgroundImage?: 'initial' | string
-  borderRadius?: string
-}
+// Components
+import BankName from './components/‌BankName'
+import CardNumber from './components/CardNumber'
 
 const IranCardBank: React.FC<IranCardBankProps> = (props: IranCardBankProps) => {
   const { fullSize, cardNumber, background, backgroundImage, borderRadius } = props
@@ -30,6 +26,7 @@ const IranCardBank: React.FC<IranCardBankProps> = (props: IranCardBankProps) => 
       <span className="icb-card-bank__number">
         <CardNumber cardNumber={cardNumber} />
       </span>
+      <BankName cardNumber={cardNumber} />
     </div>
   )
 }

@@ -18,6 +18,7 @@ body {
 }
 
 .icb-card-bank {
+  overflow: hidden;
   color: $default-color;
   font-family: inherit;
   background-color: $default-background-color;
@@ -26,6 +27,7 @@ body {
   width: $default-width;
   height: $default-height;
   @include flexBoxCenter;
+  flex-direction: column;
   background-repeat: no-repeat;
   background-position: center;
   background-size: cover;
@@ -34,7 +36,12 @@ body {
     width: 85%;
     display: flex;
     justify-content: space-around;
-    font-size: $default-font-size;
+    font-size: $large-font-size;
+  }
+
+  &__bank-name {
+    font-size: $medium-font-size;
+    margin-top: 0.5rem;
   }
 
   &__error {
