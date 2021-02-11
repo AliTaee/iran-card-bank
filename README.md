@@ -2,6 +2,12 @@
 
 Customizable Iran card bank.
 
+## features
+
+- Auto bank detection base on 6 first digits and show bank name
+- Customize: background color or gradient, background image, border radius
+- Showing error if bank number less or more than 16 digits
+
 ## List of props
 
 - cardNumber \*(type number): To show user card number.
@@ -12,7 +18,10 @@ Customizable Iran card bank.
 
 ## Todo list:
 
-- Auto bank detection and show bank name (Currently working on this feature 👨‍💻🛠️)
+- Add more unit test for all bank names (Currently working on this feature 👨‍💻🛠️)
+- Flag to enable or disable bank name
+- Position to show bank name
+- Make related props one prop object for better developer experience
 - Users can type their card number
 - Project demo
 - Customize texts
