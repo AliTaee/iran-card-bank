@@ -13,6 +13,9 @@ Customizable Iran card bank.
 ## Todo list:
 
 - Auto bank detection and show bank name (Currently working on this feature 👨‍💻🛠️)
+- Users can type their card number
+- Project demo
+- Customize texts
 - Only Show first or last digits
 - Show user card bank name and family
 - Flag to enable or disable showing name and family
