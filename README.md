@@ -1,4 +1,4 @@
-# Iran card bank 💳
+# Iran card bank 💳 v0.2.0
 
 Customizable Iran card bank.
 
