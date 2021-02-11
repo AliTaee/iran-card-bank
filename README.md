@@ -4,7 +4,7 @@ Customizable Iran card bank.
 
 ## List of props
 
-- cardNumber* (type number): To show user card number.
+- cardNumber \*(type number): To show user card number.
 - fullSize (type boolean): If it's true then it get full width and height as parent
 - background (type string): Customize background color, Also you can pass gradient 💅
 - backgroundImage (type 'initial' | string): Customize background image 🖼️
@@ -32,23 +32,27 @@ Customizable Iran card bank.
 
 - By suggestion cool features
 - Develop one of todo list features or you own idea
-- Improve code base, Clean code, Add more unit tests 
+- Improve code base, Clean code, Add more unit tests
 
 Please, Tell us about what you are working so We can update readme
 and others know what you are working on and they move to other features
 or you can help others on their development. Create a branch with feature/ prefix
-and start coding. 
+and start coding.
 
 ## Technologies
 
 Project is created with:
 
 - React
-- TypeScript
-- Jest
-- Prettier
-- Eslint
 - Node-sass
+- TypeScript
+
+## Dev Tools
+
+- Jest
+- Husky
+- Eslint
+- Prettier
 - Testing-library/react
 
 ## Build Setup
