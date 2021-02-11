@@ -1,9 +1,9 @@
 import React from 'react'
-import { IranCardBankProps } from '../model/model'
+import { IranCardBankProps } from './model/model'
 
 // Components
-import BankName from './‌BankName'
-import CardNumber from './CardNumber'
+import BankName from './components/‌BankName'
+import CardNumber from './components/CardNumber'
 
 const IranCardBank: React.FC<IranCardBankProps> = (props: IranCardBankProps) => {
   const { fullSize, cardNumber, background, backgroundImage, borderRadius } = props

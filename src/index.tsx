@@ -1,7 +1,7 @@
 import React from 'react'
 import ReactDOM from 'react-dom'
 import './styles/index.scss'
-import IranCardBank from './components/IranCardBank'
+import IranCardBank from './IranCardBank'
 import reportWebVitals from './reportWebVitals'
 
 // Asset image to testing backgroundImage prop
