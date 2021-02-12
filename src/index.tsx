@@ -7,9 +7,16 @@ import reportWebVitals from './reportWebVitals'
 // Asset image to testing backgroundImage prop
 // import ForestImage from './assets/forest-patrol.jpg'
 
+// Customize card bank theme props
+const theme = {
+  // backgroundColor: 'blue',
+  // backgroundImage: ForestImage,
+  // gradient: 'to right, #dc2430, #7b4397',
+}
+
 ReactDOM.render(
   <React.StrictMode>
-    <IranCardBank cardNumber={6274_1215_2541_8445} />
+    <IranCardBank cardNumber={6274_1215_2541_8445} theme={theme} />
   </React.StrictMode>,
   document.getElementById('root'),
 )

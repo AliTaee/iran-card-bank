@@ -6,22 +6,22 @@ import BankName from './components/‌BankName'
 import CardNumber from './components/CardNumber'
 
 const IranCardBank: React.FC<IranCardBankProps> = (props: IranCardBankProps) => {
-  const { fullSize, cardNumber, background, backgroundImage, borderRadius } = props
-  const customizeCardStyles = {
-    background,
-    borderRadius,
-    backgroundImage,
-  }
-
-  if (backgroundImage) {
-    customizeCardStyles.backgroundImage = `url(${backgroundImage})`
-  }
+  const { theme, cardNumber } = props
 
   return (
     <div
-      className={`icb-card-bank ${fullSize ? 'icb-card-bank--full-size' : ''}`}
       data-testid="icb-card-bank"
-      style={customizeCardStyles}
+      className={`icb-card-bank ${
+        theme?.fullSize ? 'icb-card-bank--full-size' : ''
+      }`}
+      style={{
+        background: theme?.backgroundImage
+          ? `url(${theme?.backgroundImage}) center center/cover no-repeat`
+          : theme?.gradient
+          ? `linear-gradient(${theme?.gradient})`
+          : theme?.backgroundColor,
+        borderRadius: theme?.borderRadius,
+      }}
     >
       <span className="icb-card-bank__number">
         <CardNumber cardNumber={cardNumber} />
