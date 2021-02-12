@@ -54,7 +54,7 @@ Project is created with:
 - Node-sass
 - TypeScript
 
-## Dev Tools
+## Dev Tools 🧑‍💻
 
 - Jest
 - Husky
@@ -62,7 +62,7 @@ Project is created with:
 - Prettier
 - Testing-library/react
 
-## Build Setup
+## Build Setup 🔧
 
 ```bash
 ### `yarn start`
