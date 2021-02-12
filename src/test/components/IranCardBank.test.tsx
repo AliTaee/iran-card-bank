@@ -10,7 +10,10 @@ describe('Iran card number test', () => {
   describe('Test props related to inline styles', () => {
     it('Should have custom background color', () => {
       render(
-        <IranCardBank cardNumber={MOCK_CARD_NUMBER} backgroundColor="#212121" />,
+        <IranCardBank
+          cardNumber={MOCK_CARD_NUMBER}
+          theme={{ backgroundColor: '#212121' }}
+        />,
       )
 
       const rootElement = screen.getByTestId(TEST_ID_ELEMENT)
@@ -21,7 +24,7 @@ describe('Iran card number test', () => {
       render(
         <IranCardBank
           cardNumber={MOCK_CARD_NUMBER}
-          gradient="to right, #8f94fb, #4e54c8"
+          theme={{ gradient: 'to right, #8f94fb, #4e54c8' }}
         />,
       )
 
@@ -32,14 +35,21 @@ describe('Iran card number test', () => {
     })
 
     it('Should have custom border radius', () => {
-      render(<IranCardBank cardNumber={MOCK_CARD_NUMBER} borderRadius="15px" />)
+      render(
+        <IranCardBank
+          cardNumber={MOCK_CARD_NUMBER}
+          theme={{ borderRadius: '15px' }}
+        />,
+      )
 
       const rootElement = screen.getByTestId(TEST_ID_ELEMENT)
       expect(rootElement).toHaveStyle('border-radius: 15px')
     })
 
     it('Should have full size className', () => {
-      render(<IranCardBank cardNumber={MOCK_CARD_NUMBER} fullSize />)
+      render(
+        <IranCardBank cardNumber={MOCK_CARD_NUMBER} theme={{ fullSize: true }} />,
+      )
 
       const rootElement = screen.getByTestId(TEST_ID_ELEMENT)
       expect(rootElement).toHaveClass('icb-card-bank--full-size')
@@ -49,7 +59,7 @@ describe('Iran card number test', () => {
       render(
         <IranCardBank
           cardNumber={MOCK_CARD_NUMBER}
-          backgroundImage="fakeImage.jps"
+          theme={{ backgroundImage: 'fakeImage.jps' }}
         />,
       )
 

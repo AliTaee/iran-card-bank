@@ -1,4 +1,4 @@
-# Iran card bank 💳 v0.2.0
+# Iran card bank 💳 v0.3.1
 
 Customizable Iran card bank.
 
@@ -18,9 +18,8 @@ Customizable Iran card bank.
 
 ## Todo list:
 
-- Make related props into one prop object for better developer experience (Currently working on this feature 👨‍💻🛠️)
+- Position prop for bank name and card number (Currently working on this feature 👨‍💻🛠️)
 - Flag to enable or disable bank name
-- Position to show bank name
 - Users can add new custom bank for auto bank detection
 - Users can type their card number
 - Project demo
@@ -28,7 +27,6 @@ Customizable Iran card bank.
 - Only Show first or last digits
 - Show user card bank name and family
 - Flag to enable or disable showing name and family
-- Position for card number
 - Position for name and family
 - Error on Card numbers
 - Improve document 📝
