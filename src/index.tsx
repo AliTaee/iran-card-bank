@@ -9,7 +9,12 @@ import reportWebVitals from './reportWebVitals'
 
 ReactDOM.render(
   <React.StrictMode>
-    <IranCardBank cardNumber={6274_1215_2541_8445} />
+    <IranCardBank
+      cardNumber={6274_1215_2541_8445}
+      // backgroundImage={ForestImage}
+      // backgroundColor="blue"
+      // gradient="9to right, #8f94fb, #4e54c8"
+    />
   </React.StrictMode>,
   document.getElementById('root'),
 )

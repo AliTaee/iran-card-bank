@@ -1,11 +1,12 @@
 export type cardNumber = number
 
 export interface IranCardBankProps {
-  cardNumber: cardNumber
+  gradient?: string
   fullSize?: boolean
-  background?: string
-  backgroundImage?: 'initial' | string
   borderRadius?: string
+  cardNumber: cardNumber
+  backgroundColor?: string
+  backgroundImage?: 'initial' | string
 }
 
 export interface CardNumberProps {
