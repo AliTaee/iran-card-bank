@@ -1,20 +1,22 @@
-# Iran card bank 💳 v0.3.1
+# Iran bank card 💳 v0.3.1
 
-Customizable Iran card bank.
+Customizable Iran bank card.
 
 ## Features
 
-- Auto bank detection base on 6 first digits and show bank name
-- Customize: background color or gradient, background image, border radius
-- Showing error if bank number less or more than 16 digits
+- Auto bank detection base on 6 first digits and show bank name.
+- Customize: background color or gradient, background image, border radius.
+- Showing error if bank number less or more than 16 digits.
 
 ## List of props
 
 - cardNumber \*(type number): To show user card number.
-- fullSize (type boolean): If it's true then it get full width and height as parent
-- background (type string): Customize background color, Also you can pass gradient 💅
-- backgroundImage (type 'initial' | string): Customize background image 🖼️
-- borderRadius (type string): Customize border radius
+- theme (type Object): 
+    - gradient (type string): Gradient background color
+    - borderRadius (type string): Customize border radius
+    - background (type string): Customize background color 💅
+    - backgroundImage (type 'initial' | string): Customize background image 🖼️
+    - fullSize (type boolean): If it's true then it get full width and height as parent
 
 ## Todo list:
 
@@ -25,10 +27,10 @@ Customizable Iran card bank.
 - Project demo
 - Customize texts
 - Only Show first or last digits
-- Show user card bank name and family
+- Show user bank card name and family
 - Flag to enable or disable showing name and family
 - Position for name and family
-- Error on Card numbers
+- Error on card numbers
 - Improve document 📝
 - Show custom background base on bank detection
 - Add unit test for each feature

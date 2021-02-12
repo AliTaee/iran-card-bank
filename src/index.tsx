@@ -7,7 +7,7 @@ import reportWebVitals from './reportWebVitals'
 // Asset image to testing backgroundImage prop
 // import ForestImage from './assets/forest-patrol.jpg'
 
-// Customize card bank theme props
+// Customize bank card theme props
 const theme = {
   // backgroundColor: 'blue',
   // backgroundImage: ForestImage,
