@@ -18,10 +18,9 @@ Customizable Iran card bank.
 
 ## Todo list:
 
-- Add more unit test for all bank names (Currently working on this feature 👨‍💻🛠️)
+- Make related props into one prop object for better developer experience (Currently working on this feature 👨‍💻🛠️)
 - Flag to enable or disable bank name
 - Position to show bank name
-- Make related props one prop object for better developer experience
 - Users can add new custom bank for auto bank detection
 - Users can type their card number
 - Project demo

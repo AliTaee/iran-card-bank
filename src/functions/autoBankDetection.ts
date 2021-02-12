@@ -104,6 +104,9 @@ export const autoBankDetection = (cardNumber: cardNumber): string => {
     case 5058_01:
       return 'موسسه اعتباری کوثر'
 
+    case 5054_16:
+      return 'بانک گردشگری'
+
     default:
       return 'بانک'
   }
